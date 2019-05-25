@@ -1,0 +1,13 @@
+<div class="modal-header">
+  <h4 class='text-left modal-title'>
+	<h1>Editing Student</h1>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </h4>
+</div>
+
+<%= render 'form', student: @student %>
+
+<%= link_to 'Show', @student, remote: true %> |
+<%= link_to 'Back', students_path %>

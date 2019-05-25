@@ -28,7 +28,7 @@ class Triangle
   end
 
   def check_side(size)
-    @size.include?(size)
+    size.include?(size)
   end
 
   def inequal?
