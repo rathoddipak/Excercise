@@ -4,8 +4,6 @@ class TwelveDays
      (1..12).map { |n| lyrics(n) }.join("\n")
   end
 
-  private
-
   NUMBERS = %w[first second third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth]
   GIFTS = [
     "and a Partridge in a Pear Tree.",
@@ -21,6 +19,8 @@ class TwelveDays
     "eleven Pipers Piping",
     "twelve Drummers Drumming",
   ]
+
+  private_constant :NUMBERS, :GIFTS
 
   def self.lyrics(n)
     case n
